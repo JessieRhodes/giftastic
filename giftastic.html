@@ -3,27 +3,42 @@
 <head>
 
 	<meta charset="UTF-8">
-	<title>Giphy Homework</title>
+	<title>Giphy Fruit Basket</title>
+	<!--bootstrap link-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!--link for font styling-->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
+	<!--jquery link-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!--css link-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
-<body>
-<div class="container">
-  <h1> Fruit Basket Search</h1>
-</div>
-<form id="fruit-form">
-    <label for="fruit-input">Search for a fruit</label>
-    <input type="text" id="fruit-input"><br>
-    
-    <!-- This button will trigger our AJAX call -->
-    <input id="findFruit" type="submit" value="Fruit Search">
-</form>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
 
-<script>
-var topics = ["blueberries", "strawberries", "peaches", "apples", "rasberries", "mangos", "bananas"];
-</script>	
+<body>
+	<div class="container">
+  		<h1> Fruit Basket </h1>
+	<br>
+	</div>
+	<!--JSON contents in here -->
+	<div id="fruitView"></div>
+	<div>
+	<br>
+		<form id="fruit-form">
+		    <label for="fruit-input"> find something fruitastic </label>
+		    <input type="text" id="fruit-input">
+		    <br><br>    
+		    <!-- button for AJAX call -->
+		    <input id="findFruit" type="submit" value="Fruit Search">
+			<br>
+		</form>
+	</div>
+	<div id="gifsAppearHere">
+	</div>
+
+<!--javascript link-->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+	
+	
 </body>
 </html>

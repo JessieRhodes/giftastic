@@ -1,0 +1,11 @@
+body {
+	background-color: #FBD742;
+	font-style: bold;
+	font-size: 30px;
+}
+
+h1, form, div {
+	text-align: center;
+	font-family: 'Cormorant Garamond', serif;
+}
+
